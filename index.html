@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手部康复辅助系统</title>
+    <link rel="stylesheet" href="./src/css/index.css">
+    
+</head>
+<body>
+    <header></header>
+    <div id="app">
+      <div class="box">
+        <button onclick="">
+            <div class="imgBox">
+                <img src="./src/img/1.jpg" alt="">
+            </div>
+            <!-- <span class="source">点赞</span> -->
+            <h2 class="title">手指辅助康复训练</h2>
+        </button>
+      </div>
+      
+      <div class="box">
+        <button onclick="">
+            <div class="imgBox">
+                <img src="./src/img/2.jpg" alt="">
+            </div>
+            <!-- <span class="source">康复动作</span> -->
+            <h2 class="title">手部功能评定</h2>
+          </button>
+      </div>
+
+      <div class="box">
+        <button onclick="">
+            <div class="imgBox">
+                <img src="./src/img/3.jpg" alt="">
+            </div>
+            <!-- <span class="source">点赞</span> -->
+            <h2 class="title">手指协调训练</h2>  
+        </button>
+      </div>
+
+      <div class="box">
+        <button onclick="">
+            <div class="imgBox">
+                <img src="./src/img/4.jpg" alt="">
+            </div>
+            <!-- <span class="source">点赞</span> -->
+            <h2 class="title">手指灵敏度训练</h2>    
+        </button>
+      </div>
+    </div>   
+
+    <div id="app">
+      <div class="box">
+        <button onclick="showPopup1()">
+            <div class="imgBox">
+                <img src="./src/img/5.jpg" alt="">
+            </div>
+            <!-- <span class="source">点赞</span> -->
+            <h2 class="title">手指被动训练</h2>
+        </button>
+      </div>
+
+      <div class="box">
+        <button onclick="">
+            <div class="imgBox">
+                <img src="./src/img/6.jpg" alt="">
+            </div>
+            <!-- <span class="source">康复动作</span> -->
+            <h2 class="title">移动寻找训练</h2>
+        </button>
+      </div>
+
+      <div class="box">
+        <button onclick="">
+            <div class="imgBox">
+                <img src="./src/img/7.jpg" alt="">
+            </div>
+            <!-- <span class="source">点赞</span> -->
+            <h2 class="title">手指跟踪训练</h2>
+        </button>
+      </div>
+
+      <div class="box">
+        <button onclick="">
+            <div class="imgBox">
+                <img src="./src/img/8.jpg" alt="">
+            </div>
+            <!-- <span class="source">点赞</span> -->
+            <h2 class="title">拼图训练</h2> 
+        </button>
+      </div>
+    </div>  
+  
+
+    <div id="overlay1">
+      <div class="popup">
+        <p class="popup_content">手指被动训练</p>
+        <img class="popup_img" src="./src/img/9.JPG">
+        <img class="popup_img" src="./src/img/10.JPG">
+        <img class="popup_img" src="./src/img/popup3.jpg">
+        <img class="popup_img" src="./src/img/popup4.jpg">
+        <img class="popup_img" src="./src/img/popup5.jpg">
+        <img class="popup_img" src="./src/img/popup6.jpg">
+        <div class="popup_btn">
+          <button class="cancelBtn" onclick="hidePopup1()">取消</button>
+          <button class="confirmBtn" onclick="hidePopup1()">确认</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay2">
+      <div class="popup">
+        <p class="popup_content"></p>
+        <img class="popup_img" src="./src/img/9.JPG">
+        <img class="popup_img" src="./src/img/10.JPG">
+        <img class="popup_img" src="./src/img/9.JPG">
+        <div class="popup_btn">
+          <button class="cancelBtn" onclick="hidePopup2()">取消</button>
+          <button class="confirmBtn" onclick="hidePopup2()">确认</button>
+        </div>
+      </div>
+    </div>
+    
+</body>
+
+<script src="./src/js/index.js"></script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手部康复辅助系统</title>
+    <link rel="stylesheet" href="./src/css/login.css">
+    
+ 
+</head>
+
+<body>
+    <div class="shell">
+        <div class="container a-container" id="a-container">
+            <form action="" method="" class="form" id="a-form">
+                <h2 class="form_title title">注册账号</h2>
+                <input type="text" class="form_input1" placeholder="用户名">
+                <input type="text" class="form_input2" placeholder="邮箱">
+                <input type="text" class="form_input3" placeholder="密码">
+                <button class="form_button button submit">注册</button>
+            </form>
+        </div>
+
+        <div class="container b-container" id="b-container">
+            <form action="" method="" class="form" id="b-form" name="f" onsubmit="check(this)">
+                <h2 class="form_title title">登录账号</h2>
+                <input type="text" class="form_input4" placeholder="用户名" id="username">
+                <input type="text" class="form_input5" placeholder="密码" id="password">
+                <a class="form_link">忘记密码？</a>
+                <button class="form_button button submit " onclick="check(this)">登录</button>
+            </form>
+        </div>
+
+        <div class="switch" id="switch-cnt">
+            <div class="switch_circle"></div>
+            <div class="switch_circle switch_circle-t"></div>
+            <div class="switch_container" id="switch-c1">
+                <h2 class="switch_title title" style="letter-spacing: 0;">Welcome Back！</h2>
+                <p class="switch_description description">已有账号，去登录</p>
+                <button class="switch_button button switch-btn">登录账号</button>
+            </div>
+
+            <div class="switch_container is-hidden" id="switch-c2">
+                <h2 class="switch_title title" style="letter-spacing: 0;">Hello Friend！</h2>
+                <p class="switch_description description">欢迎注册</p>
+                <button class="switch_button button switch-btn">注册账号</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./src/js/login.js"></script>
+<script>
+   function check(thisform){
+      var name = document.getElementById("username").value;
+      var pass = document.getElementById("password").value;
+
+      if (name=="admin" && pass=="123456"){
+        alert("登录成功！");
+        window.document.f.action ="index.html";
+        window.document.f.submit();
+      }
+      else{
+        alert("用户名或密码输入错误！");
+      }
+   }
+
+
+</script>
+
+</body>
+
+</html> 
